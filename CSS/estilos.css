@@ -11,28 +11,41 @@
     padding: 0px;
 }
 
+
 .imagen-fondo{
     background-image: url(../Assets/Imagenes/home.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    
-
-
-
+    background-attachment: fixed;    
 }
 .imagen-fondo2{
     background-image: url(../Assets/Imagenes/Nosotros.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .imagen-fondo3{
     background-image: url(../Assets/Imagenes/Servicios.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .imagen-fondo4{
     background-image: url(../Assets/Imagenes/Contacto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .imagen-fondo5{
     background-image: url(../Assets/Imagenes/Publicaciones.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -47,7 +60,7 @@ a{
 
 }
 .font-secund{
-    font-family: 'font-secund';
+    font-family: 'fuente-secundario';
     color: #fff;
     font-size: 20px;
     font-style: normal;
@@ -61,17 +74,17 @@ a{
     list-style: none;
     color: #fff;
     font-size: 18px;
-    font-family: 'font-secund';
+    font-family: 'fuente-secundario';
     padding: 29px 240px;
 }
 li{
     margin: 0px 20px;
     
 }
-p{
+.latin{
     display: inline;
     color: #87E7AD;
-    font-family: 'font-secund';
+    font-family: 'fuente-secundario';
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
@@ -81,7 +94,7 @@ p{
 h4{
     display: inline;
     color: #FFF;
-    font-family: 'font-secund';
+    font-family: 'fuente-secundario';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -90,6 +103,7 @@ h4{
 }
 h3{
     display: inline;
+
 }
 h1{
     display: inline;
@@ -104,7 +118,7 @@ button{
     border-radius: 12px;
     background: #87E7AD;
     color: #000;
-    font-family: 'font-secund';
+    font-family: 'fuente-secundario';
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
