@@ -17,7 +17,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;    
+    background-attachment: fixed;
+
 }
 .imagen-fondo2{
     background-image: url(../Assets/Imagenes/Nosotros.png);
@@ -47,9 +48,27 @@
     background-size: cover;
     background-attachment: fixed;
 }
-a{
+.logo-home{
+
+    width: 148px;
+    height: 49.333px;
+    margin-right: 800px;
+
+}
+li a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
+    transition: color 0.3s ease;
+    
+}
+li:hover a {
+    color: #87E7AD;
+    display: inline-flex;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #87E7AD;
+    height: 62px;
 }
 .font-main{
     font-family: 'fuente-principal';
@@ -67,19 +86,35 @@ a{
     font-weight: 400;
     letter-spacing: 0.4px;
 }
+.navbar{
+    display: inline-flex;
+    height: 78px;
+    flex-shrink: 0;
+    background: rgba(60, 60, 60, 0.47);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5.5px);
+    
+}
 .estilo-lista{
-    display: flex;
+    display: inline-flex;
+    width: 100%;
+    max-width: 1920px;
     flex-direction:row;
     justify-content:flex-end;
-    list-style: none;
+    align-items: center;
     color: #fff;
     font-size: 18px;
     font-family: 'fuente-secundario';
-    padding: 29px 240px;
+    padding: 12px 240px;
+    list-style: none; 
 }
+
 li{
-    margin: 0px 20px;
-    
+    margin: -10px 20px;
+   
+}
+footer{
+
 }
 .latin{
     display: inline;
@@ -88,6 +123,36 @@ li{
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+.texto-compromisoypasion {
+    color: #FFF;
+    text-align: center;
+    font-family: 'fuente-secundario';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+.texto-valores{
+    color: #87E7AD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'fuente-secundario';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+.texto-descripcion01{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'fuente-secundario';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.56px;
 }
@@ -127,8 +192,11 @@ button{
 .flex-conteiner{
     display: inline-flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 629px;
 
-    margin: 160px 996px 0px 295px;
+    margin: 160px 0px 0px 220px;
     text-align: center;
 
 }
@@ -138,19 +206,39 @@ button{
     justify-content: center;
     justify-items: center;
 }
-.flex-conteiner2{
-
-    display: flex;
-    flex-direction:column;
-    align-items: flex-end;
-    
-    
+.flex-conteiner2 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 122px;
+    padding: 20px 15px;
+    border-radius: 16px;
+    background: rgba(94, 94, 94, 0.43);
+    backdrop-filter: blur(11px);
+    text-align: center;
+    margin: 42px 0px 0px 1220px;
 }
-footer{
-    display: inline;
+.flex-conteiner2 section {
+
+    
 }
 
 /* GRID PRACTICA */
+.grid-pagina{
+    display: grid;
+    grid-template-columns: 549px 635px;
+    gap: 218px;
+    margin: 60px 240px;
+}
+
+.grid-nosotros{
+
+    
+
+}
+
+
 .cabecera{
     display: flex;
     flex-direction: row;
@@ -159,7 +247,7 @@ footer{
 
 
     /*tipografia*/
-    font-size: 50px;
+
     /*box nodeling*/
     padding: 20px;
 }
@@ -168,7 +256,6 @@ footer{
     /*box modeling*/
     width: 90%;
     max-width: 1000px;
-    border: 10px solid #000;
     margin: auto;
 
     /*tipografia*/
@@ -176,10 +263,16 @@ footer{
     text-align: center;
     /*activamos grid*/    
 }
-.grid-conteiner > div {
-    /*box modeling*/
-    display: block;
-    border: 1px solid #000;
-    padding: 20px;
+.grid-valores{
+    /* box-modeling */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: rgba(52, 52, 52, 0.43);
+    backdrop-filter: blur(11px);
+    padding: 26px 49px 16px 37px;
+
 }
+
 
