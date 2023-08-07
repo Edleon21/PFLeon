@@ -275,4 +275,270 @@ button{
 
 }
 
+/* mediaqueries */
+@media screen and (max-width: 480px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    .imagen-fondo{
+        background-image: url(../Assets/Imagenes/home.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    
+    }
+    .imagen-fondo2{
+        background-image: url(../Assets/Imagenes/Nosotros.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .imagen-fondo3{
+        background-image: url(../Assets/Imagenes/Servicios.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .imagen-fondo4{
+        background-image: url(../Assets/Imagenes/Contacto.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .imagen-fondo5{
+        background-image: url(../Assets/Imagenes/Publicaciones.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .logo-home{
+    margin: 10px 360px 0px 0px;
+    display: flex;
+    width: 92px;
+    height: 30.667px;
+    flex-shrink: 0;
+    
+    }
+    li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+        
+    }
+    li:hover a {
+        color: #87E7AD;
+        display: inline-flex;
+        padding-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #87E7AD;
+        height: 62px;
+    }
+    .font-main{
+        color: #FFF;
+        text-align: center;
+        font-family: Philosopher;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+    }
+    .font-secund{
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.32px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
 
+        display: inline-flex;
+        flex-shrink: 0;
+        background: rgba(60, 60, 60, 0.47);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5.5px);
+        
+    }
+    .estilo-lista{
+
+    }
+    
+    li{
+       
+    }
+    .latin{
+        display: inline;
+        color: #87E7AD;
+        font-family: 'fuente-secundario';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.56px;
+    }
+    .texto-compromisoypasion {
+        color: #FFF;
+        text-align: center;
+        font-family: 'fuente-secundario';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.56px;
+    }
+    .texto-valores{
+        color: #87E7AD;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'fuente-secundario';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.64px;
+    }
+    .texto-descripcion01{
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'fuente-secundario';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.56px;
+    }
+    h4{
+        display: inline;
+        color: #FFF;
+        font-family: 'fuente-secundario';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    }
+    h3{
+        display: inline;
+    
+    }
+    h1{
+        display: inline;
+    }
+    button{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
+        border-radius: 12px;
+        background: #87E7AD;
+        color: #000;
+        font-family: 'fuente-secundario';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .flex-conteiner{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 629px;
+    
+        margin: 224px 0px 0px 0px;
+        text-align: center;
+    
+    }
+    .flex-conteiner section {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;
+    }
+    .flex-conteiner2 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 122px;
+        padding: 20px 15px;
+        border-radius: 16px;
+        background: rgba(94, 94, 94, 0.43);
+        backdrop-filter: blur(11px);
+        text-align: center;
+        margin: 42px 0px 0px 1220px;
+    }
+    .flex-conteiner2 section {
+    
+        
+    }
+    
+    /* GRID PRACTICA */
+    .grid-pagina{
+        display: grid;
+        grid-template-rows: 2fr;
+        align-items: center;
+        justify-content: center;
+        gap: 218px;
+        margin: 60px 240px;
+    }
+    
+    .grid-nosotros{
+    
+        
+    
+    }
+    
+    
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    
+        /*tipografia*/
+    
+        /*box nodeling*/
+        padding: 20px;
+    }
+    .grid-conteiner{
+    
+        /*box modeling*/
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+    
+        /*tipografia*/
+        font-size: 50px;
+        text-align: center;
+        /*activamos grid*/    
+    }
+    .grid-valores{
+        /* box-modeling */
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 16px;
+        background: rgba(52, 52, 52, 0.43);
+        backdrop-filter: blur(11px);
+        padding: 26px 49px 16px 37px;
+    
+    }
+}
