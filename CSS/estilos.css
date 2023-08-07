@@ -189,6 +189,29 @@ button{
     font-weight: 600;
     line-height: normal;
 }
+.edit02{
+    display: grid;
+    grid-template-columns: 404px 404px 404px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 140px;
+    gap: 35px;
+
+}
+.edit01{
+    border-radius: 16px;
+    background: rgba(210, 210, 210, 0.38);
+    backdrop-filter: blur(11px);
+    color: #FFF;
+    font-family: 'fuente-secundario';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    padding: 25px;
+}
+
 .flex-conteiner{
     display: inline-flex;
     flex-direction: column;
@@ -274,6 +297,9 @@ button{
     padding: 26px 49px 16px 37px;
 
 }
+
+
+
 
 /* mediaqueries */
 @media screen and (max-width: 480px){
