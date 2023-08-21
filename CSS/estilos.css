@@ -319,13 +319,22 @@ button{
     utilizamos ~ cuando el elemento a afectar esta 
     al mismo nivel (es hermano)
     utilizamos + cuando el elemento es hijo
-    ///estados de imputs///
-    :checked checkbox/radio     estados de input
-    :focus
-    :selected
-    :valid
-    :invalid
-    :hover
+    ///Git///
+    git init
+    git config --global user.name tuNombre
+    git config --global user.email tuEmail
+    git status
+    git add .
+    git commit -m "mensaje"
+    git branch nombrederama
+    git checkout nombredelaRama
+    git merge nombredelaRama
+    git remote add origin https:  
+    git branch -M main
+    git push -u origin main
+
+
+ 
     */
 
 /* mediaqueries */
