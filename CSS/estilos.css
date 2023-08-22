@@ -10,6 +10,7 @@
   src: url("../Assets/Fonts/Mulish-Regular.ttf");
 }
 /*Variables*/
+/*Condicionales IF*/
 * {
   margin: 0;
   padding: 0;
@@ -98,8 +99,6 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-family: "Mulish-regular";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -142,6 +141,14 @@ ul li a::after {
 }
 
 /*------Fuentes-------*/
+/*extend*/
+.font-textos01, .edit01, h4, .texto-descripcion01, .texto-compromisoypasion, .font-secund, nav ul li a {
+  font-family: "Mulish-regular";
+  color: #fff;
+}
+
+/*Mixins*/
+/*****************************************/
 .font-main {
   font-family: "philosopher-bold";
   color: #fff;
@@ -151,8 +158,6 @@ ul li a::after {
 }
 
 .font-secund {
-  font-family: "Mulish-regular";
-  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -166,18 +171,14 @@ ul li a::after {
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 0.56px;
 }
 
 .texto-compromisoypasion {
-  color: #fff;
   text-align: center;
-  font-family: "Mulish-regular";
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 0.56px;
 }
 
@@ -188,29 +189,23 @@ ul li a::after {
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 0.64px;
 }
 
 .texto-descripcion01 {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Mulish-regular";
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 0.56px;
 }
 
 h4 {
   display: inline;
-  color: #fff;
-  font-family: "Mulish-regular";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 0.48px;
 }
 
@@ -228,7 +223,7 @@ button {
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  letter-spacing: 0px;
 }
 
 .edit02 {
@@ -241,21 +236,16 @@ button {
 }
 
 .edit01 {
-  border-radius: 16px;
-  background: rgba(210, 210, 210, 0.38);
-  backdrop-filter: blur(11px);
-  color: #fff;
-  font-family: "Mulish-regular";
+  background: rgba(33, 33, 33, 0.47);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5.5px);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 0.4px;
-  padding: 25px;
 }
 
 .flex-conteiner {
-  border: solid 1px #FFF;
   display: flex;
   padding: 5% 60% 0% 15%;
 }
@@ -269,6 +259,15 @@ button {
   text-align: center;
 }
 
+.iconos-flex {
+  border: solid 1px #cb0dfa;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0% 60% 0% 15%;
+  gap: 17px;
+}
+
 .flex-conteiner2 {
   border: solid 1px #FFF;
   display: flex;
@@ -279,9 +278,9 @@ button {
 }
 
 .flex-conteiner2 section {
-  border-radius: 16px;
-  background: rgba(81, 81, 81, 0.43);
-  backdrop-filter: blur(11px);
+  background: rgba(33, 33, 33, 0.47);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5.5px);
   padding: 20px 15px;
   text-align: center;
 }
@@ -299,7 +298,6 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*tipografia*/
   /*box nodeling*/
   padding: 20px;
 }
@@ -320,14 +318,14 @@ button {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 16px;
-  background: rgba(52, 52, 52, 0.43);
-  backdrop-filter: blur(11px);
+  background: rgba(33, 33, 33, 0.47);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5.5px);
   padding: 26px 49px 16px 37px;
 }
 
 /*
-    utilizamos ~ cuando el elemento a afectar esta 
+    utilizamos ~ cuando el elemento a afectar esta
     al mismo nivel (es hermano)
     utilizamos + cuando el elemento es hijo
     ///Git///
@@ -341,24 +339,24 @@ button {
     git checkout nombredelaRama
     git merge nombredelaRama
     ///repo remoto///
-    git remote add origin https:  
+    git remote add origin https:
     git branch -M main
     git push -u origin main
 
 ////////////* mediaqueries ///////////*/
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-/* 
+/*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */

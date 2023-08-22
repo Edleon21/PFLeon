@@ -4,7 +4,7 @@
 @import "colores";
 @import "fuentes";
 /*Variables*/
-
+/*Condicionales IF*/
 *{
     margin: 0;
     padding: 0;
@@ -81,15 +81,14 @@ nav input, nav label {
     display: none;
 }
 
-nav {    
+nav {
     ul {
         display: flex;
         list-style: none;
         li{
             a{
                 text-decoration: none;
-                color:$color-primario-fuente;
-                font-family: $font-secundaria;
+                @extend .font-textos01;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
@@ -131,72 +130,71 @@ ul li a::after{
     transition-duration: 500ms;
     transition-property: width, left;
 }
+/////////*********************//////////
 /*------Fuentes-------*/
-.font-main{
+/*extend*/
+.font-textos01{
+    font-family: $font-secundaria;
+    color: $color-primario-fuente;
+}
+/*Mixins*/
+@mixin background-p(){
+    background: rgba(33, 33, 33, 0.47);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5.5px);
+}
+@mixin texto-titulos(){
     font-family: $font-principal;
     color: $color-primario-fuente;
     font-size: 65px;
     font-style: normal;
     font-weight: 700;
-
 }
+@mixin texto-descripciones($tamanio,$style,$peso,$espaciado){
+    font-size:$tamanio;
+    font-style: $style;
+    font-weight: $peso;
+    letter-spacing: $espaciado;
+}
+@mixin marcador-borde(){
+    border: solid 1px #cb0dfa;
+}
+/*****************************************/
+.font-main{
+    @include texto-titulos();
+}
+
 .font-secund{
-    font-family: $font-secundaria;
-    color: $color-primario-fuente;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.4px;
+    @extend .font-textos01;
+    @include texto-descripciones(20px,normal,400,0.4px)
 }
 .latin{
     display: inline;
     color: $color-secund-fuente;
     font-family: $font-secundaria;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.56px;
+    @include texto-descripciones(28px,normal,600,0.56px)
 }
-.texto-compromisoypasion {
-    color: $color-primario-fuente;
+.texto-compromisoypasion{
+    @extend .font-textos01;
     text-align: center;
-    font-family: $font-secundaria;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.56px;
+    @include texto-descripciones(28px,normal,500,0.56px)
 }
 .texto-valores{
     color: $color-secund-fuente;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: $font-secundaria;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.64px;
+    @include texto-descripciones(30px,normal,600,.64px)
 }
 .texto-descripcion01{
+    @extend .font-textos01;
     color: $color-primario-fuente;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: $font-secundaria;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.56px;
+    @include texto-descripciones(25px,normal,500,0.56px)
 }
 h4{
+    @extend .font-textos01;
     display: inline;
-    color: $color-primario-fuente;
-    font-family: $font-secundaria;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.48px;
+    @include texto-descripciones(24px,normal,400,0.48px)
 }
 
 button{
@@ -210,10 +208,7 @@ button{
     background: $color-primario;
     color: #000;
     font-family: $font-secundaria;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    @include texto-descripciones(22px,normal,600,0px)
 }
 .edit02{
     display: grid;
@@ -222,34 +217,32 @@ button{
     align-content: center;
     margin-top: 140px;
     gap: 35px;
-
 }
 .edit01{
-    border-radius: 16px;
-    background: rgba(210, 210, 210, 0.38);
-    backdrop-filter: blur(11px);
-    color: $color-primario-fuente;
-    font-family: $font-secundaria;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.4px;
-    padding: 25px;
+    @extend .font-textos01;
+    @include background-p();
+    @include texto-descripciones(20px,normal,500,0.4px);
 }
 
 .flex-conteiner{
-    border: solid 1px #FFF;
     display: flex;
     padding: 5% 60% 0% 15%;
 }
 .flex-conteiner section {
-    border: solid 1px #cb0dfa;
+    @include marcador-borde();
     display: grid;
     gap: 40px;
     justify-content: center;
     justify-items: center;
     text-align: center;
+}
+.iconos-flex{
+    @include marcador-borde();
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0% 60% 0% 15%;
+    gap: 17px;
 }
 .flex-conteiner2 {
     border: solid 1px #FFF;
@@ -260,14 +253,10 @@ button{
     padding: 5% 10% 0% 0%;
 }
 .flex-conteiner2 section{
-    border-radius: 16px;
-    background: rgba(81, 81, 81, 0.43);
-    backdrop-filter: blur(11px);
+    @include background-p();
     padding: 20px 15px;
     text-align: center;
 }
-
-
 
 /* GRID PRACTICA */
 .grid-pagina{
@@ -282,15 +271,10 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
-    /*tipografia*/
-
     /*box nodeling*/
     padding: 20px;
 }
 .grid-conteiner{
-
     /*box modeling*/
     width: 90%;
     max-width: 1000px;
@@ -299,21 +283,19 @@ button{
     /*tipografia*/
     font-size: 50px;
     text-align: center;
-    /*activamos grid*/    
+    /*activamos grid*/
 }
 .grid-valores{
     /* box-modeling */
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 16px;
-    background: rgba(52, 52, 52, 0.43);
-    backdrop-filter: blur(11px);
+    @include background-p();
     padding: 26px 49px 16px 37px;
 
 }
     /*
-    utilizamos ~ cuando el elemento a afectar esta 
+    utilizamos ~ cuando el elemento a afectar esta
     al mismo nivel (es hermano)
     utilizamos + cuando el elemento es hijo
     ///Git///
@@ -327,30 +309,30 @@ button{
     git checkout nombredelaRama
     git merge nombredelaRama
     ///repo remoto///
-    git remote add origin https:  
+    git remote add origin https:
     git branch -M main
     git push -u origin main
 
 ////////////* mediaqueries ///////////*/
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {}
 
-/* 
+/*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {}
 
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
