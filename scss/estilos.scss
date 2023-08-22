@@ -199,11 +199,12 @@ button{
     display: grid;
     grid-template-columns: 20% 20% 20%;
     justify-content: center;
-    padding: 7% 0%;
+    padding: 3% 0%;
     gap: 40px;
 }
 .edit01{
-    @include background-p();    
+    @include background-p();
+    border-radius: 16px;
 }
 .edit-text01{
     @extend .font-textos01;
@@ -214,10 +215,9 @@ button{
     @include texto-descripciones(20px,normal,500,0.4px);
 }
 .edit-text03{
-    background-color: $color-lasttimecard;
+    @extend .font-textos01;
     padding: 0% 2%;
-    border-radius: 5px;
-    @include texto-descripciones(18px,normal,600,0.4px);
+    @include texto-descripciones(18px,normal,300,0.4px);
 }
 .flex-conteiner{
     display: flex;
@@ -274,25 +274,113 @@ button{
     /*tipografia*/
     @extend .font-textos01;
     text-align: center;
-    @include texto-descripciones(28px,normal,500,0.56px);
+    @include texto-descripciones(26px,normal,500,0.56px);
     padding: 0% 8%;
 }
 .grid-valores{
     /* box-modeling */
     display: inline-flex;
     @include background-p();
+    border-radius: 16px;
     padding: 2% 4%;
 }
 .titulo-valores{
     color: $color-secund-fuente;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: $font-secundaria;
-    @include texto-descripciones(30px,normal,600,.64px)
+    @include texto-descripciones(28px,normal,600,.64px)
 }
 .texto-descripcion01{
     @extend .font-textos01;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @include texto-descripciones(25px,normal,500,0.56px)
+    @include texto-descripciones(23px,normal,500,0.56px)
+}
+.flex-titulos{
+    @include marcador-borde();
+    display: flex;
+    justify-content: flex-start;
+    padding: 1% 10%;
+}
+.grid-servicios{
+    @include marcador-borde();
+    display: grid;
+    grid-template-columns:28% 40% 28% ;
+    padding: 0% 10%;
+    gap: 3%;
+}
+.items{
+    @include marcador-borde();
+    @include background-p();
+    border-radius: 16px;
+    padding: 5% 5%;
+}
+.items-text01{
+    color: $color-secund-fuente;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: $font-secundaria;
+    @include texto-descripciones(25px,normal,700,0.56px)
+}
+.items-text02{
+    @extend .font-textos01;
+    @include texto-descripciones(18px,normal,500,0.4px);
+
+}
+.linea02{
+    background-color: $color-secundario;
+    width: 100%;
+    height: 3px;
+}
+.grid-contacto{
+    @include marcador-borde();
+    display: grid;
+    grid-template-columns: 40% 30%;
+    gap: 250px;
+    padding: 2% 10%;
+}
+.contenedor-info{
+    @include marcador-borde();
+    display: grid;
+    padding:20% 10%;
+    font-family: $font-secundaria;
+    color: $color-primario-fuente;
+    @include texto-descripciones(20px,normal,400,0.8);
+}
+.contenedor-form{
+    @include marcador-borde();
+    @include background-p();
+    border-radius: 8px;
+}
+.grid-form{
+        font-family: $font-secundaria;
+        color: $color-primario-fuente;
+        @include texto-descripciones(20px,normal,500,0);
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        padding: 5%;
+        row-gap: 2%;
+}
+.font-main02{
+    font-family: $font-principal;
+    color: $color-primario-fuente;
+    @include texto-descripciones(24px,normal,700,0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4%;
+    align-items: center;
+}
+.font-info{
+    font-family: $font-secundaria;
+    color: $color-primario-fuente;
+    @include texto-descripciones(20px,normal,500,0);
+}
+.boton-imput{
+    border-style: none;
+    font-family: $font-secundaria;
+    color: $color-primario-fuente;
+    @include texto-descripciones(26px,normal,400,0);
+    background-color: $color-boton02;
+    border-radius: 5px;
 }
     /*
     utilizamos ~ cuando el elemento a afectar esta
