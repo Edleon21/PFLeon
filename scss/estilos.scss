@@ -174,23 +174,7 @@ ul li a::after{
     font-family: $font-secundaria;
     @include texto-descripciones(28px,normal,600,0.56px)
 }
-.texto-compromisoypasion{
-    @extend .font-textos01;
-    text-align: center;
-    @include texto-descripciones(28px,normal,500,0.56px)
-}
-.texto-valores{
-    color: $color-secund-fuente;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: $font-secundaria;
-    @include texto-descripciones(30px,normal,600,.64px)
-}
-.texto-descripcion01{
-    @extend .font-textos01;
-    color: $color-primario-fuente;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @include texto-descripciones(25px,normal,500,0.56px)
-}
+
 h4{
     @extend .font-textos01;
     display: inline;
@@ -211,19 +195,30 @@ button{
     @include texto-descripciones(22px,normal,600,0px)
 }
 .edit02{
+    @include marcador-borde();
     display: grid;
-    grid-template-columns: 404px 404px 404px;
+    grid-template-columns: 20% 20% 20%;
     justify-content: center;
-    align-content: center;
-    margin-top: 140px;
-    gap: 35px;
+    padding: 7% 0%;
+    gap: 40px;
 }
 .edit01{
+    @include background-p();    
+}
+.edit-text01{
     @extend .font-textos01;
-    @include background-p();
+    @include texto-descripciones(24px,normal,600,0.4px);
+}
+.edit-text02{
+    @extend .font-textos01;
     @include texto-descripciones(20px,normal,500,0.4px);
 }
-
+.edit-text03{
+    background-color: $color-lasttimecard;
+    padding: 0% 2%;
+    border-radius: 5px;
+    @include texto-descripciones(18px,normal,600,0.4px);
+}
 .flex-conteiner{
     display: flex;
     padding: 5% 60% 0% 15%;
@@ -260,39 +255,44 @@ button{
 
 /* GRID PRACTICA */
 .grid-pagina{
+    @include marcador-borde();
     display: grid;
-    grid-template-columns: 549px 635px;
-    gap: 218px;
-    margin: 60px 240px;
+    grid-template-columns:40% 40%;
+    gap: 200px;
+    padding: 3% 8%;
 }
-
 .cabecera{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /*box nodeling*/
-    padding: 20px;
+    @include marcador-borde();
+    padding: 5%;
+    text-align: center;
 }
 .grid-conteiner{
-    /*box modeling*/
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-
+    @include marcador-borde(); /*box modeling*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     /*tipografia*/
-    font-size: 50px;
+    @extend .font-textos01;
     text-align: center;
-    /*activamos grid*/
+    @include texto-descripciones(28px,normal,500,0.56px);
+    padding: 0% 8%;
 }
 .grid-valores{
     /* box-modeling */
     display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
     @include background-p();
-    padding: 26px 49px 16px 37px;
-
+    padding: 2% 4%;
+}
+.titulo-valores{
+    color: $color-secund-fuente;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: $font-secundaria;
+    @include texto-descripciones(30px,normal,600,.64px)
+}
+.texto-descripcion01{
+    @extend .font-textos01;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include texto-descripciones(25px,normal,500,0.56px)
 }
     /*
     utilizamos ~ cuando el elemento a afectar esta
