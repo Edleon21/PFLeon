@@ -180,7 +180,6 @@ button {
     border: unset;
     border-radius: 12px;
     color: #000;
-    z-index: 1;
     background:$color-primario;
     @include texto-descripciones(24px,normal,600 ,0px);
     position: relative;
