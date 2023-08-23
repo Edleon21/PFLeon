@@ -12,41 +12,31 @@
 }
 
 /***********************************************/
+@mixin background-paginas($position,$repeat,$size,$attachment){
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-attachment: $attachment;
+}
 .imagen-fondo{
     background-image: url(../Assets/Imagenes/home.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+    @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo2{
     background-image: url(../Assets/Imagenes/Nosotros.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo3{
     background-image: url(../Assets/Imagenes/Servicios.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo4{
     background-image: url(../Assets/Imagenes/Contacto.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo5{
     background-image: url(../Assets/Imagenes/Publicaciones.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    @include background-paginas(center,no-repeat,cover,fixed)
 }
 /*********************************************/
 /*Clases para navbar y menu hamburguesa tuky*/
@@ -168,6 +158,9 @@ ul li a::after{
     @extend .font-textos01;
     @include texto-descripciones(20px,normal,400,0.4px)
 }
+.linea02{
+    max-width: 100%;
+}
 .latin{
     display: inline;
     color: $color-secund-fuente;
@@ -224,7 +217,6 @@ button{
     padding: 5% 60% 0% 15%;
 }
 .flex-conteiner section {
-    @include marcador-borde();
     display: grid;
     gap: 40px;
     justify-content: center;
@@ -232,7 +224,6 @@ button{
     text-align: center;
 }
 .iconos-flex{
-    @include marcador-borde();
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -240,7 +231,6 @@ button{
     gap: 17px;
 }
 .flex-conteiner2 {
-    border: solid 1px #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,6 +239,7 @@ button{
 }
 .flex-conteiner2 section{
     @include background-p();
+    border-radius: 16px;
     padding: 20px 15px;
     text-align: center;
 }
@@ -407,19 +398,16 @@ button{
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {}
-
 /*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
-
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {}
-
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
@@ -455,8 +443,7 @@ button{
     }
     nav {
         ul {
-            backdrop-filter: blur(7.7px);
-            background: linear-gradient(156deg, rgba(30, 86, 53, 0.17) 0%, rgba(5, 22, 12, 0.57) 65.13%, rgba(0, 0, 0, 0.93) 100%, #000 100%);
+            background: linear-gradient(156deg, rgba(13, 46, 27, 0.17) 3%, rgba(5, 22, 12, 0.57) 8%, rgba(0, 0, 0, 0.93) 100%, #000 10%);
             position: absolute;
             left: 100%;
             top: 78px;
@@ -473,5 +460,55 @@ button{
             }
         }
     }
-
+    .imagen-fondo{
+        background-image: url(../Assets/Imagenes/home.png);
+        @include background-paginas(80%,no-repeat,cover,fixed)
+    }
+    .font-main{
+        @include texto-descripciones(33px,normal,700,0.4px)
+    }
+    .font-secund{
+        @include texto-descripciones(16px,normal,400,0.32px)
+    }
+    .latin{
+        display: inline;
+        @include texto-descripciones(16px,normal,600,0.6px)
+    }
+    h4{
+        display: inline;
+        @include texto-descripciones(16px,normal,400,0.48px)
+    }
+    button{;
+        @include texto-descripciones(16px,normal,700,0px)
+    }
+    .flex-conteiner{
+        display: flex;
+        justify-content: center;
+        padding: 22% 10%;
+    }
+    .flex-conteiner section {
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .linea02{
+        max-width: 100%;
+    }
+    .iconos-flex{
+        justify-content: center;
+        padding: 0% 10%;
+        gap: 28px;
+    }
+    .flex-conteiner2 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 13% 10%;
+    }
+    .flex-conteiner2 section{
+        border-radius: 16px;
+        padding: 10px 10px;
+        text-align: center;
+    }
 }
