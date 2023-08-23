@@ -35,7 +35,7 @@
 }
 
 .imagen-fondo3 {
-  background-image: url(../Assets/Imagenes/Servicios.png);
+  background-image: url(../Assets/Imagenes/Publicaciones.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 .imagen-fondo4 {
-  background-image: url(../Assets/Imagenes/Contacto.png);
+  background-image: url(../Assets/Imagenes/Nosotros3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +51,7 @@
 }
 
 .imagen-fondo5 {
-  background-image: url(../Assets/Imagenes/Publicaciones.png);
+  background-image: url(../Assets/Imagenes/Contacto.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,14 +338,12 @@ button {
 }
 
 .flex-titulos {
-  border: solid 1px #cb0dfa;
   display: flex;
   justify-content: flex-start;
   padding: 1% 10%;
 }
 
 .grid-servicios {
-  border: solid 1px #cb0dfa;
   display: grid;
   grid-template-columns: 28% 40% 28%;
   padding: 0% 10%;
@@ -353,7 +351,6 @@ button {
 }
 
 .items {
-  border: solid 1px #cb0dfa;
   background: rgba(33, 33, 33, 0.47);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5.5px);
@@ -478,6 +475,9 @@ button {
     git remote add origin https:
     git branch -M main
     git push -u origin main
+    git remote remove origin (elimina la conexion)
+    git remote set-url origin newHTTP/SSH (cambia la url del rep remoto)
+    git remote -v (ver lista de
 
 ////////////* mediaqueries ///////////*/
 /*
@@ -606,6 +606,21 @@ button {
     border-radius: 16px;
     padding: 10px 10px;
     text-align: center;
+  }
+  .imagen-fondo2 {
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .flex-titulos {
+    padding: 6% 10%;
+  }
+  .grid-servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0% 10%;
+    gap: 2%;
   }
 }
 

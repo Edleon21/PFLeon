@@ -27,15 +27,15 @@
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo3{
-    background-image: url(../Assets/Imagenes/Servicios.png);
+    background-image: url(../Assets/Imagenes/Publicaciones.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo4{
-    background-image: url(../Assets/Imagenes/Contacto.png);
+    background-image: url(../Assets/Imagenes/Nosotros3.jpg);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo5{
-    background-image: url(../Assets/Imagenes/Publicaciones.png);
+    background-image: url(../Assets/Imagenes/Contacto.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 /*********************************************/
@@ -287,20 +287,17 @@ button{
     @include texto-descripciones(23px,normal,500,0.56px)
 }
 .flex-titulos{
-    @include marcador-borde();
     display: flex;
     justify-content: flex-start;
     padding: 1% 10%;
 }
 .grid-servicios{
-    @include marcador-borde();
     display: grid;
     grid-template-columns:28% 40% 28% ;
     padding: 0% 10%;
     gap: 3%;
 }
 .items{
-    @include marcador-borde();
     @include background-p();
     border-radius: 16px;
     padding: 5% 5%;
@@ -391,6 +388,9 @@ button{
     git remote add origin https:
     git branch -M main
     git push -u origin main
+    git remote remove origin (elimina la conexion)
+    git remote set-url origin newHTTP/SSH (cambia la url del rep remoto)
+    git remote -v (ver lista de
 
 ////////////* mediaqueries ///////////*/
 /*
@@ -510,5 +510,17 @@ button{
         border-radius: 16px;
         padding: 10px 10px;
         text-align: center;
+    }
+    .imagen-fondo2{
+        @include background-paginas(30%,no-repeat,cover,fixed)
+    }
+    .flex-titulos{
+        padding: 6% 10%;
+    }
+    .grid-servicios{
+        display: grid;
+        grid-template-columns:100%;
+        padding: 0% 10%;
+        gap: 2%;
     }
 }
