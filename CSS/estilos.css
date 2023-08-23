@@ -152,6 +152,7 @@ ul li a::after {
 .font-main {
   font-family: "philosopher-bold";
   color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   font-size: 65px;
   font-style: normal;
   font-weight: 700;
@@ -204,7 +205,6 @@ button {
 }
 
 .edit02 {
-  border: solid 1px #cb0dfa;
   display: grid;
   grid-template-columns: 20% 20% 20%;
   justify-content: center;
@@ -281,7 +281,6 @@ button {
 
 /* GRID PRACTICA */
 .grid-pagina {
-  border: solid 1px #cb0dfa;
   display: grid;
   grid-template-columns: 40% 40%;
   gap: 200px;
@@ -289,18 +288,16 @@ button {
 }
 
 .cabecera {
-  border: solid 1px #cb0dfa;
   padding: 5%;
   text-align: center;
 }
 
-.grid-conteiner {
-  border: solid 1px #cb0dfa;
-  /*box modeling*/
+.grid-conteiner { /*box modeling*/
   justify-content: center;
   align-items: center;
   width: 100%;
   /*tipografia*/
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
   text-align: center;
   font-size: 26px;
   font-style: normal;
@@ -382,7 +379,6 @@ button {
 }
 
 .grid-contacto {
-  border: solid 1px #cb0dfa;
   display: grid;
   grid-template-columns: 40% 30%;
   gap: 250px;
@@ -390,11 +386,11 @@ button {
 }
 
 .contenedor-info {
-  border: solid 1px #cb0dfa;
   display: grid;
   padding: 20% 10%;
   font-family: "Mulish-regular";
   color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.95);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -402,7 +398,6 @@ button {
 }
 
 .contenedor-form {
-  border: solid 1px #cb0dfa;
   background: rgba(33, 33, 33, 0.47);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5.5px);
@@ -524,11 +519,13 @@ button {
     left: 0;
   }
   nav ul {
-    background: linear-gradient(156deg, rgba(13, 46, 27, 0.17) 3%, rgba(5, 22, 12, 0.57) 8%, rgba(0, 0, 0, 0.93) 100%, #000 10%);
+    background: rgba(16, 16, 16, 0.67);
+    backdrop-filter: blur(5.5px);
     position: absolute;
     left: 100%;
     top: 78px;
     width: 100%;
+    height: 800px;
     padding: 5% 3%;
     flex-direction: column;
     align-items: flex-end;
@@ -621,6 +618,94 @@ button {
     grid-template-columns: 100%;
     padding: 0% 10%;
     gap: 2%;
+  }
+  .imagen-fondo3 {
+    background-position: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .edit02 {
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding: 0% 10%;
+    gap: 20px;
+  }
+  .edit-text01 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+  .edit-text02 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+  }
+  .edit-text03 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+  }
+  .imagen-fondo4 {
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .grid-pagina {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+    padding: 5% 7%;
+  }
+  .cabecera {
+    padding: 4% 2%;
+    text-align: left;
+  }
+  .grid-conteiner {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+    padding: 0% 3%;
+  }
+  .grid-valores {
+    border-radius: 12px;
+    padding: 4%;
+  }
+  .titulo-valores {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  .texto-descripcion01 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.56px;
+  }
+  .imagen-fondo5 {
+    background-position: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0px;
+    padding: 0% 6%;
+  }
+  .contenedor-info {
+    order: 2;
+    display: grid;
+    padding: 20% 5%;
+    row-gap: 20px;
   }
 }
 
