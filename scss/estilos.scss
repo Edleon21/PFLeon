@@ -544,7 +544,7 @@ button:hover::before{
         display: inline;
         @include texto-descripciones(16px,normal,400,0.48px)
     }
-    button{;
+    button{
         @include texto-descripciones(16px,normal,700,0px)
     }
     .flex-conteiner{
