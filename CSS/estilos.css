@@ -279,10 +279,9 @@ button:hover::before {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 0% 50% 0% 24%;
+  padding: 0% 24%;
   gap: 20px;
 }
-
 .container-icon div {
   border: none;
   transition: 0.3s;
@@ -545,6 +544,7 @@ button:hover::before {
     git remote add origin https:
     git branch -M main
     git push -u origin main
+    ///nuevo repo remoto///
     git remote remove origin (elimina la conexion)
     git remote set-url origin newHTTP/SSH (cambia la url del rep remoto)
     git remote -v (ver lista de
@@ -567,6 +567,9 @@ button:hover::before {
   ##Screen = B/w 320px to 479px
 */
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   nav {
     z-index: 1;
     padding: 0% 7%;
