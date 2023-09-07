@@ -19,23 +19,23 @@
     background-attachment: $attachment;
 }
 .imagen-fondo{
-    background-image: url(../Assets/Imagenes/home.png);
+    background-image: url(../assets/imagenes/home.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo2{
-    background-image: url(../Assets/Imagenes/Nosotros.png);
+    background-image: url(../assets/imagenes/nosotros.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo3{
-    background-image: url(../Assets/Imagenes/Publicaciones.png);
+    background-image: url(../assets/imagenes/publicaciones.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo4{
-    background-image: url(../Assets/Imagenes/Nosotros3.jpg);
+    background-image: url(../assets/imagenes/nosotros3.jpg);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 .imagen-fondo5{
-    background-image: url(../Assets/Imagenes/Contacto.png);
+    background-image: url(../assets/imagenes/contacto.png);
     @include background-paginas(center,no-repeat,cover,fixed)
 }
 /*********************************************/
@@ -527,7 +527,7 @@ button:hover::before{
     }
     ////pagina home
     .imagen-fondo{
-        background-image: url(../Assets/Imagenes/home.png);
+        background-image: url(../assets/imagenes/home.png);
         @include background-paginas(80%,no-repeat,cover,fixed)
     }
     .font-main{

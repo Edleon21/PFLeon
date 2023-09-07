@@ -3,11 +3,11 @@
 (sass --watch scss/estilos.scss css/estilos.css)*/
 @font-face {
   font-family: "philosopher-bold";
-  src: url("../Assets/Fonts/Philosopher-Bold.ttf");
+  src: url("../assets/fonts/Philosopher-Bold.ttf");
 }
 @font-face {
   font-family: "Mulish-regular";
-  src: url("../Assets/Fonts/Mulish-Regular.ttf");
+  src: url("../assets/fonts/Mulish-Regular.ttf");
 }
 /*Variables*/
 /*Condicionales IF*/
@@ -19,7 +19,7 @@
 
 /***********************************************/
 .imagen-fondo {
-  background-image: url(../Assets/Imagenes/home.png);
+  background-image: url(../assets/imagenes/home.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@
 }
 
 .imagen-fondo2 {
-  background-image: url(../Assets/Imagenes/Nosotros.png);
+  background-image: url(../assets/imagenes/nosotros.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 .imagen-fondo3 {
-  background-image: url(../Assets/Imagenes/Publicaciones.png);
+  background-image: url(../assets/imagenes/publicaciones.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 .imagen-fondo4 {
-  background-image: url(../Assets/Imagenes/Nosotros3.jpg);
+  background-image: url(../assets/imagenes/nosotros3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +51,7 @@
 }
 
 .imagen-fondo5 {
-  background-image: url(../Assets/Imagenes/Contacto.png);
+  background-image: url(../assets/imagenes/contacto.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -614,7 +614,7 @@ button:hover::before {
     font-weight: 500;
   }
   .imagen-fondo {
-    background-image: url(../Assets/Imagenes/home.png);
+    background-image: url(../assets/imagenes/home.png);
     background-position: 80%;
     background-repeat: no-repeat;
     background-size: cover;
